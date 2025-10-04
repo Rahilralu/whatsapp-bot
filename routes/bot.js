@@ -3,9 +3,9 @@ import { handleIncomingMessage } from '../controllers/bot.js';
 
 const router = express.Router();
 
-router.post('/whatsapp-webhook', handleIncomingMessage);
+router.post('/', handleIncomingMessage);
 
-router.get('/whatsapp-webhook', (req, res) => {
+router.get('/', (req, res) => {
   res.send('Webhook is working!');
 });
 
